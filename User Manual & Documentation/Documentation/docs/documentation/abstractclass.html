@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account Abstract Class</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Account Abstract Class</h1>
+    <hr>
+    <br>
+    <img src="21.png" />
+    <br>
+    <br>
+    <hr>
+    <div>
+      <h3>Direct Known Subclasses:</h3>
+      <p class="left"><a href="checkingaccount.html">Checking Account</a>, <a href="savingsaccount.html">Savings Account</a></p>
+    </div>
+    <hr>
+    <div>
+      <p class="left" id="codefont">public abstract class <strong>Account</strong></p>
+      <br>
+      <p class="left">Defines new account fields
+        with their getters and setters.
+      </p>
+      <p class="left">Implements an instance of the <a href="managerinterface.html"><strong>Account Manager Interface</strong></a> 
+        and defines a new method.
+      </p>
+    </div>
+    <hr>
+    <table cellpadding="10">
+      <h3>Fields Summary:</h3>
+      <tr>
+        <th>Modifier and Type</th>
+        <th>Field and Description</th>
+      </tr>
+      <tr>
+        <td>protected <strong>String</strong></td>
+        <td><strong>accountID</strong><p class="left" id="normaltext">Identifies change to Account's ID number</p></td>
+      </tr>
+      <tr>
+        <td>protected double</td>
+        <td><strong>balance</strong><p class="left" id="normaltext">Identifies change to Account's Balance</p></td>
+      </tr>
+      <tr>
+        <td>protected <strong>String</strong></td>
+        <td><strong>accountType</strong><p class="left" id="normaltext">Identifies change to Account's Type</p></td>
+      </tr>
+      <tr>
+        <td>protected <strong>String</strong></td>
+        <td><strong>firstName</strong><p class="left" id="normaltext">Identifies change to Account Owner's First Name</p></td>
+      </tr>
+      <tr>
+        <td>protected <strong>String</strong></td>
+        <td><strong>lastName</strong><p class="left" id="normaltext">Identifies change to Account Owner's Last Name</p></td>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <table cellpadding="10">
+      <h3>Methods Summary:</h3>
+      <tr>
+        <th>Modifier and Type</th>
+        <th>Method and Description</th>
+      </tr>
+      <tr>
+        <td>public abstract<strong><a href="managerinterface.html"> IAccountManager</a></strong></td>
+        <td><strong>getAccountManager()</strong><p class="left" id="normaltext">Method to create instance of an <strong><a href="checkingmanager.html">Account Manager</a></strong> when new Account Is Created </p></td>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <p>
+      <a href="index.html">Index</a>
+    </p>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

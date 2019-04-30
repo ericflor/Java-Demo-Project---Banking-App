@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spark Project User Manual</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <div>
+      <h1>Spark Bank Account User Manual</h1>
+    </div>
+  </head>
+  <hr>
+  <body>
+    <h2 id="open">Opening An Account</h2>
+    <ol>
+      <li>Click 'Add Accounts' Button</li>
+      <li>Choose Account Type You Wish To Open From The Dropdown Menu</li>
+      <li>Account Readout With New Account ID Will Printed Below</li>
+    </ol>
+    <div>
+      <img src="1.png" alt="account creation"></img>
+    </div>
+    <div>
+      <p><em>Note: <strong>Checking Accounts</strong> Start With Zero Balance & Have A $5 Overdraft Fee --
+        <strong>Savings Accounts</strong> Start With A $20.00 Balance & Have A Maximum of Three Monthly Withdrawals
+      </em></p>
+    </div>
+    <br>
+    <br>
+    <h2 id="deposit">Depositing Money</h2>
+    <ol>
+      <li>Type In The Amount You Wish To Deposit</li>
+      <li>On The Right-Hand Side Select 'deposit'</li>
+      <li>Click the 'Execute' Button</li>
+      <li>Return Value Will Be True If Executed Successfully</li>
+    </ol>
+    <div>
+      <img src="2.png" alt="account deposit"></img>
+    </div>
+    <div>
+      <p><em>Note: Ensure The Account ID # You Wish To Deposit To Is Selected From The Left-Hand Dropdown Menu </em></p>
+    </div>
+    <br>
+    <br>
+    <h2 id="withdraw">Withdrawing Money</h2>
+    <ol>
+      <li>Type In The Amount You Wish To Withdraw</li>
+      <li>On The Right-Hand Side Select 'withdraw'</li>
+      <li>Click the 'Execute' Button</li>
+      <li>Return Value Will Be True If Executed Successfully</li>
+    </ol>
+    <div>
+      <img src="3.png" alt="withdrawing money"></img>
+    </div>
+    <div>
+        <p><em>Note: Ensure The Account ID # You Wish To Withdraw From Is Selected From The Left-Hand Dropdown Menu </em></p>
+    </div>
+    <br>
+    <br>
+    <h2 id="overdraft">Overdraft Fees</h2>
+    <div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Your Checking Account will result in a $5 Overdraft Fee if the amount you are 
+        attempting to withdraw is greather than your current available balance.
+      </p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;You will receive the following Error Notification and $5 will automatically be 
+        deducted from your account.
+      </p>
+      <div>
+        <img src="4.png" alt="overdraft charge" />
+      </div>
+    </div>
+    <br>
+    <br>
+    <h2 id="max">Maximum Monthly Withdrawals</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Your Savings Acccount is allowed a maximum of <strong>3</strong> withdrawals per month. 
+      If you attempt any more, you will be returned a false value and the deposit will not be executed.
+    </p>
+    <div>
+      <img src="8.png" alt="max withdrawals" />
+    </div>
+    <br>
+    <br>
+    <h2 id="min">Savings Balance Minimum</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Your Savings Account is required to have a minimum balance of <strong>$20.00</strong>.
+    If you attempt to withdraw more you will receive the following notification and the withdrawal will 
+    not be executed. </p>
+    <div>
+      <img src="12.png" alt="savings minimum balance" />
+    </div>
+    <h2 id="info">Account Information</h2>
+    <ol>
+      <li>Click 'View Accounts' Button</li>
+      <li>Choose An Amount To Display All Accounts With The Specified Minimum Balance</li>
+      <li>Choose Account Type From The Dropdown Menu To Display All Your Accounts With The Specified Type</li>
+      <li>You Will Then Be Able To View A Printout Of All Accounts, The Number of Accounts, 
+        And The Accounts With the Parameters You Previously Selected </li>
+    </ol>
+    <div>
+      <img src="9.png" alt="choose minimum balance to display" />
+      <br>
+      <img src="10.png" alt="choose account type to report on" />
+      <br>
+      <img src="11.png" alt="account report printout" />
+      <div>
+        <p><em>Note: You can see on Savings Account #2 that we have reached the maximum amount of monthly 
+          withdrawls.
+        </em></p>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h1>Thank You For Joining Spark Bank!</h1>
+  </body>
+</html>

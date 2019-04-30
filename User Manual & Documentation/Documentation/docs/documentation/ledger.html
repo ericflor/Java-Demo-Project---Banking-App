@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ledgder Class</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Ledger Class</h1>
+    <hr>
+    <br>
+    <img src="28.png" />
+    <br>
+    <img src="29.png" />
+    <br>
+    <br>
+    <hr>
+    <div>
+      <p class="left" id="codefont">public class <strong>Ledger</strong></p>
+      <br>
+      <p class="left">Initializes Field from instance variable.
+      </p>
+      <p class="left">Defines Default No-Arg Constructor.
+      </p>
+      <p class="left">Defines six new methods for adding new Account information to Ledger. </p>
+      <p class="left">Creates a new Hash Map to act as the Ledger. </p>
+    </div>
+    <hr>
+    <table cellpadding="10">
+      <h3>Fields Summary:</h3>
+      <tr>
+        <th>Modifier and Type</th>
+        <th>Field and Description</th>
+      </tr>
+      <tr>
+        <td>private static final <strong>Ledger</strong></td>
+        <td><strong><em>instance</em></strong> = new Ledger();<p class="left" id="normaltext">Static reference to the class itself. Ensures only one instance of the class for the accounts being tracked.</p></td>
+      </tr>
+      <tr>
+        <td>Map&lt;String, Account&gt;</td>
+        <td><strong><em>accounts</em></strong> = new HashMap&lt;String, Account&gt;
+        <p class="left" id="normaltext">Initializes new field of an empty Hash Map for managing Account information</p></td>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <table cellpadding="10">
+      <h3>Methods Summary:</h3>
+      <tr>
+        <th>Modifier and Type</th>
+        <th>Method and Description</th>
+      </tr>
+      <tr>
+        <td>public static <strong>Ledger</strong></td>
+        <td><strong>getInstance()</strong><p class="left" id="normaltext">Method to return single instance of the Ledger.</p></td>
+      </tr>
+      <tr>
+        <td>public boolean</td>
+        <td><strong>store(Account account)</strong><p class="left" id="normaltext">Adds a new Account to the Hash Map. Returns false if account already exists in Ledger.
+        </p></td>
+      </tr>
+      <tr>
+        <td>public <strong><a href="abstractclass.html">Account</a></strong></td>
+        <td><strong>retrieve(String accountID)</strong><p class="left" id="normaltext">Returns a single Account with the specified accountID from the accounts Map. If none is found, return null.</p>
+      </tr>
+      <tr>
+        <td>public <strong><a href="abstractclass.html">Account</a></strong></td>
+        <td><strong>createAccount(String accountType, String firstName, String lastName)</strong><p class="left" id="normaltext">
+          Passes account type and owner's name as parameters and returns a New Account object based on User-Specified Account Type.
+        </p>
+      </tr>
+      <tr>
+        <td>public <strong>String</strong></td>
+        <td><strong>getNextAccountID()</strong><p class="left" id="normaltext">Helper method to find out what the next accountID will be based on the number of Accounts within the accounts Map. Returns the size of the accounts Map plus one.</p></td>
+      </tr>
+      <tr>
+        <td>public <strong>List&lt;Account&gt;</strong></td>
+        <td><strong>getAllAccounts()</strong><p class="left" id="normaltext">Returns a List of all of the Accounts within the accounts Map.</p></td>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <table cellpadding="10">
+        <h3>Constructors Summary:</h3>
+        <tr>
+          <th>Modifier and Type</th>
+          <th>Method and Description</th>
+        </tr>
+        <tr>
+          <td>private</td>
+          <td><strong>Ledger()</strong><p class="left" id="normaltext">Default No-Arg Constructor
+          </p></td>
+        </tr>
+      </table>
+    <br>
+    <hr>
+    <br>
+    <p>
+      <a href="index.html">Index</a>
+    </p>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

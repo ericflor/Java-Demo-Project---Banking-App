@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Savings Account Class</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Savings Account Class</h1>
+    <hr>
+    <br>
+    <img src="23.png" />
+    <br>
+    <br>
+    <hr>
+    <div>
+      <h3>Extends From:</h3>
+      <p class="left"><a href="abstractclass.html">Abstract Account Class</a></p>
+    </div>
+    <hr>
+    <div>
+      <p class="left" id="codefont">public class <strong>SavingsAccount</strong> extends <strong>Account</strong></p>
+      <br>
+      <p class="left">Defines and initializes three new fields with their getters and setters.
+      </p>
+      <p class="left">Defines one default no-arg constructor and another passing three parameters.
+      </p>
+      <p class="left">Overrides the toString() method as well as the getAccountManager() method from the <strong>
+        <a href="abstractclass.html">Account Abstract Class.</a>
+      </strong></p>
+    </div>
+    <hr>
+    <table cellpadding="10">
+      <h3>Fields Summary:</h3>
+      <tr>
+        <th>Modifier and Type</th>
+        <th>Field and Description</th>
+      </tr>
+      <tr>
+        <td>private double</td>
+        <td><strong>minBalance</strong><p class="left" id="normaltext">Sets Account's Minimum Balance to $20.</p></td>
+      </tr>
+      <tr>
+        <td>private int</td>
+        <td><strong>currentMonthlyWithdrawals</strong><p class="left" id="normaltext">Sets Account's Current Monthly Withdrawals to 0.</p></td>
+      </tr>
+      <tr>
+        <td>private int</td>
+        <td><strong>maxMonthlyWithdrawals</strong><p class="left" id="normaltext">Sets Account's Maximum Monthly Withdrawals to 3.</p></td>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <table cellpadding="10">
+      <h3>Methods Summary:</h3>
+      <tr>
+        <th>Modifier and Type</th>
+        <th>Method and Description</th>
+      </tr>
+      <tr>
+        <td>public String</td>
+        <td><strong>toString</strong><p class="left" id="normaltext">Returns concatenation of account field values</p></td>
+      </tr>
+      <tr>
+        <td>public<strong><a href="managerinterface.html"> IAccountManager</a></strong></td>
+        <td><strong>getAccountManager()</strong><p class="left" id="normaltext">Defines creation of an <strong><a href="checkingmanager.html">Account Manager</a></strong> along with the instantiation of the same account</p></td>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <table cellpadding="10">
+        <h3>Constructors Summary:</h3>
+        <tr>
+          <th>Modifier and Type</th>
+          <th>Method and Description</th>
+        </tr>
+        <tr>
+          <td>public</td>
+          <td><strong>SavingsAccount()</strong><p class="left" id="normaltext">Default: Initializes sample fields for testing</p></td>
+        </tr>
+        <tr>
+          <td>public</td>
+          <td><strong>SavingsAccount(String accountID, String firstName, String lastName)</strong><p class="left" id="normaltext">Defines creation of a new Savings Account when called by the <strong><a href="ledger.html">Ledger Class</a></strong>.</p></td>
+        </tr>
+      </table>
+    <br>
+    <hr>
+    <br>
+    <p>
+      <a href="index.html">Index</a>
+    </p>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
